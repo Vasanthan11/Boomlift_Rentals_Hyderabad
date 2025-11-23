@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Boom Lift Rental Hyderabad | Boom Lifts & Scissor Lift Hire</title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Sreda&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark: #2C3639;
+      --dark-soft: #3F4E4F;
+      --accent: #A27B5C;
+      --cream: #DCD7C9;
+      --light-bg: #F5F1E7;
+      --text-main: #1b1b1b;
+      --muted: #6f7476;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Raleway", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #101314;
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ----------------- HERO ----------------- */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(120deg, rgba(12, 19, 22, 0.94), rgba(34, 45, 47, 0.9)),
+        url("./images/01.jpg") center/cover no-repeat;
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 20% 0%, rgba(220, 215, 201, 0.16) 0, transparent 45%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding: 80px 0 70px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-copy {
+      max-width: 620px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(220, 215, 201, 0.12);
+      border: 1px solid rgba(220, 215, 201, 0.4);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .hero-badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #25D366;
+      box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.25);
+    }
+
+    .hero-title {
+      font-family: "Sreda", "Raleway", system-ui, sans-serif;
+      font-size: 2.65rem;
+      line-height: 1.05;
+      margin-bottom: 14px;
+    }
+
+    .hero-sub {
+      font-size: 1.02rem;
+      line-height: 1.7;
+      color: #f2f2f2;
+      margin-bottom: 22px;
+    }
+
+    .hero-tagline {
+      font-size: 0.9rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: rgba(247, 245, 239, 0.85);
+      margin-bottom: 22px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .btn-main {
+      padding: 11px 26px;
+      border-radius: 999px;
+      border: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: #ffffff;
+      cursor: pointer;
+      transition: background 0.22s ease, color 0.22s ease;
+    }
+
+    .btn-main:hover {
+      background: #ffffff;
+      color: var(--dark);
+    }
+
+    .btn-ghost {
+      padding: 11px 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(220, 215, 201, 0.8);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      background: transparent;
+      color: #f5f5f5;
+      cursor: pointer;
+      transition: background 0.22s ease, color 0.22s ease, border-color 0.22s ease;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(220, 215, 201, 0.15);
+      border-color: #ffffff;
+    }
+
+    .hero-footnote {
+      font-size: 0.82rem;
+      color: rgba(235, 233, 225, 0.86);
+    }
+
+    .hero-footnote strong {
+      color: #ffffff;
+    }
+
+    .hero-card {
+      background: rgba(12, 18, 21, 0.88);
+      backdrop-filter: blur(10px);
+      border-radius: 18px;
+      padding: 28px 24px 22px;
+      border: 1px solid rgba(220, 215, 201, 0.18);
+      box-shadow: 0 28px 62px rgba(0, 0, 0, 0.65);
+      min-height: 240px;
+    }
+
+    .hero-card-title {
+      font-size: 0.95rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(246, 245, 240, 0.9);
+      margin-bottom: 14px;
+    }
+
+    .hero-metric-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .hero-metric {
+      flex: 1;
+    }
+
+    .metric-value {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--cream);
+    }
+
+    .metric-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(225, 222, 214, 0.85);
+    }
+
+    .hero-card-note {
+      font-size: 0.8rem;
+      color: rgba(230, 227, 219, 0.9);
+      margin-top: 16px;
+      line-height: 1.7;
+    }
+
+    /* -------------- GENERIC SECTIONS -------------- */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-light {
+      background: var(--light-bg);
+    }
+
+    .section-cream {
+      background: var(--cream);
+    }
+
+    .section-dark {
+      background: #1e3d3a; /* your dark green */
+      color: #ffffff;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-kicker {
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-family: "Sreda", "Raleway", system-ui, sans-serif;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section-lead {
+      max-width: 740px;
+      margin: 0 auto;
+      font-size: 0.97rem;
+      color: var(--muted);
+    }
+
+    .section-dark .section-lead {
+      color: rgba(235, 232, 224, 0.9);
+    }
+
+    /* -------------- FEATURES / USE CASES -------------- */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .feature-card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 20px 18px;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(44, 54, 57, 0.06);
+      transition: background 0.25s ease, color 0.25s ease,
+      transform 0.2s ease, box-shadow 0.25s ease;
+    }
+
+    .feature-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: rgba(44, 54, 57, 0.07);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .feature-title {
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 1.5rem;
+    }
+
+    .feature-card:hover {
+      background: #1e3d3a;
+      color: #ffffff;
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .feature-card:hover .feature-title {
+      color: #ffffff;
+    }
+
+    .feature-card:hover .feature-body {
+      color: #f7f7f7;
+    }
+
+    .feature-card:hover .feature-icon {
+      background: rgba(220, 215, 201, 0.15);
+      color: #ffffff;
+    }
+
+    .feature-body {
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* -------------- SPLIT SECTION -------------- */
+    .split-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 40px;
+      align-items: center;
+    }
+
+    .split-image-wrap img {
+      width: 100%;
+      display: block;
+      border-radius: 14px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .split-heading {
+      font-family: "Sreda", "Raleway", system-ui, sans-serif;
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    .split-body {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+      line-height: 1.7;
+    }
+
+    .split-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+
+    .split-list li {
+      padding: 7px 0;
+      font-size: 0.94rem;
+      position: relative;
+      padding-left: 18px;
+      color: var(--text-main);
+    }
+
+    .section-dark .split-list li {
+      color: var(--cream);
+    }
+
+    .split-list li::before {
+      content: "•";
+      position: absolute;
+      left: 4px;
+      top: 2px;
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    /* -------------- FLEET CARDS -------------- */
+    .fleet-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .fleet-card {
+      background: #ffffff;
+      padding: 20px 18px 18px;
+      border-radius: 14px;
+      border: 1px solid rgba(44, 54, 57, 0.08);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .fleet-tag {
+      font-size: 0.75rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    .fleet-title {
+      font-weight: 600;
+      font-size: 1.02rem;
+      margin-bottom: 6px;
+    }
+
+    .fleet-meta {
+      font-size: 0.86rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .fleet-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    .fleet-list li {
+      padding: 5px 0;
+    }
+
+    /* -------------- STEPS (HOW IT WORKS) -------------- */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .step-card {
+      position: relative;
+      padding: 18px 16px 16px;
+      border-radius: 12px;
+      background: rgba(12, 19, 21, 0.65);
+      border: 1px solid rgba(220, 215, 201, 0.16);
+    }
+
+    .step-number {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px solid rgba(220, 215, 201, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+      color: var(--cream);
+    }
+
+    .step-title {
+      font-weight: 600;
+      font-size: 0.98rem;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+
+    .step-body {
+      font-size: 0.88rem;
+      color: rgba(238, 236, 228, 0.9);
+      line-height: 1.6;
+    }
+
+    /* -------------- GALLERY -------------- */
+    .gallery-wrap {
+      overflow: hidden;
+      max-height: 620px;
+      border-radius: 14px;
+      padding: 6px;
+      background: linear-gradient(180deg, #ffffff, #f9f7f3);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    }
+
+    .gallery-track {
+      display: block;
+      animation: slideUp 20s linear infinite;
+      will-change: transform;
+    }
+
+    .gallery-track:hover {
+      animation-play-state: paused;
+    }
+
+    .gallery-item {
+      display: block;
+      padding: 8px 6px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-50%); }
+    }
+
+    /* -------------- SCROLL REVEAL -------------- */
+    .reveal,
+    .reveal-left,
+    .reveal-right {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal-left { transform: translateX(-30px); }
+    .reveal-right { transform: translateX(30px); }
+
+    .is-visible {
+      opacity: 1;
+      transform: translateX(0) translateY(0);
+    }
+
+    /* -------------- RESPONSIVE -------------- */
+    @media (max-width: 992px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+        padding-top: 90px;
+        gap: 26px;
+      }
+      .hero-copy { max-width: 100%; }
+      .hero-title { font-size: 2.1rem; }
+      .feature-grid,
+      .fleet-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .steps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .split-layout { grid-template-columns: minmax(0, 1fr); }
+    }
+
+    @media (max-width: 640px) {
+      .section { padding: 60px 0; }
+       .container {
+        padding: 50px 14px;
+      }
+      .hero { min-height: 72vh; }
+      .hero-title { font-size: 1.7rem; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .feature-grid,
+      .fleet-grid,
+      .steps-grid { grid-template-columns: minmax(0, 1fr); }
+      .gallery-item img { height: 220px; }
+    }
+
+    /* -------- MODAL (POPUP FORM) -------- */
+    .quote-modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      z-index: 2000;
+    }
+
+    .quote-modal.is-open { display: block; }
+
+    .quote-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.78);
+      backdrop-filter: blur(3px);
+    }
+
+    .quote-modal-dialog {
+      position: relative;
+      max-width: 840px;
+      margin: 40px auto;
+      padding: 0;
+      border-radius: 18px;
+      overflow: hidden;
+      background: transparent; /* let section handle its own bg */
+    }
+
+    .quote-modal-close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      border: none;
+      background: transparent;
+      color: #ffffff;
+      font-size: 26px;
+      line-height: 1;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    /* Make the cloned full contact section look nice in popup */
+    #quote-modal-content .contact-section {
+      border-radius: 18px;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    @media (max-width: 640px) {
+      .quote-modal-dialog {
+        margin: 20px 12px;
+      }
+    }
+
+    /* form section full width on page bottom */
+    #enquiry-section {
+      background: transparent;
+      padding-bottom: 0;
+    }
+
+    .form-fragment-wrap {
+      max-width: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR FRAGMENT WILL BE LOADED HERE -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy reveal-left">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>Hyderabad · Boom Lifts & Scissor Lift Hire</span>
+        </div>
+        <h1 class="hero-title">Safe Access to Every Working Height.</h1>
+        <p class="hero-sub">
+          Boom lifts and scissor lifts on rent for construction, MEP, façade works, warehousing and industrial maintenance across Hyderabad and Telangana.
+        </p>
+        <p class="hero-tagline">Certified machines · Experienced operators · On-time deployment</p>
+
+        <div class="hero-actions">
+          <a href="#!" class="btn-main" data-open-quote="true">Get Your Rental Quote</a>
+          <a href="./boom-lifts.html" class="btn-ghost">View Boom Lift Options</a>
+        </div>
+
+        <p class="hero-footnote">
+          <strong>Same-day dispatch</strong> possible for ready sites within city limits.
+        </p>
+      </div>
+
+      <aside class="hero-card reveal-right">
+        <p class="hero-card-title">Quick fleet snapshot</p>
+
+        <div class="hero-metric-row">
+          <div class="hero-metric">
+            <div class="metric-value">30–150 ft</div>
+            <div class="metric-label">Working height range</div>
+          </div>
+          <div class="hero-metric">
+            <div class="metric-value">24/7</div>
+            <div class="metric-label">Support on projects</div>
+          </div>
+        </div>
+
+        <div class="hero-metric-row">
+          <div class="hero-metric">
+            <div class="metric-value">Electric</div>
+            <div class="metric-label">Indoor scissor lifts</div>
+          </div>
+          <div class="hero-metric">
+            <div class="metric-value">Diesel</div>
+            <div class="metric-label">Outdoor boom lifts</div>
+          </div>
+        </div>
+
+        <p class="hero-card-note">
+          All units are safety-checked before every deployment and can be supplied with trained operators on request.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- WHERE WE ARE USED -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">Applications</div>
+        <h2 class="section-title">Where Our Lifts Are Most Useful</h2>
+        <p class="section-lead">
+          From tech parks in Madhapur to large plants on the city outskirts, our access platforms help teams work safely at height without scaffolding.
+        </p>
+      </div>
+
+      <div class="split-layout">
+        <div class="reveal-left">
+          <h3 class="split-heading">Typical jobs we support in Hyderabad</h3>
+          <p class="split-body">
+            Our boom and scissor lifts are deployed for short shutdowns, long projects and recurring facility maintenance. You get stable platforms,
+            precise positioning and reduced downtime.
+          </p>
+          <ul class="split-list">
+            <li>IT parks, malls & commercial façade cleaning and glazing</li>
+            <li>MEP, fire-fighting and HVAC installation inside high sheds</li>
+            <li>Industrial shutdowns, pipe rack & cable tray work</li>
+            <li>Warehouse racking, lighting and signage installation</li>
+            <li>Stadiums, convention centres and event infrastructure</li>
+          </ul>
+        </div>
+
+        <div class="split-image-wrap reveal-right">
+          <img src="./images/boo-03.jpg" alt="Boom lift working at height in Hyderabad">
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:32px;">
+        <a href="#!" class="btn-main" data-open-quote="true">Check Availability for Your Site</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE / FEATURES -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">Why choose us</div>
+        <h2 class="section-title">Focused on Safe, Reliable Height Access</h2>
+        <p class="section-lead">
+          We specialise only in aerial work platforms, so you get the right machine, clear pricing and a support team that understands jobsite realities.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <div class="feature-icon">✓</div>
+          <h3 class="feature-title">Project-ready machines</h3>
+          <p class="feature-body">
+            Regularly maintained boom and scissor lifts with valid safety checksheets and documents for industrial sites and large contractors.
+          </p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">⏱</div>
+          <h3 class="feature-title">Fast deployment</h3>
+          <p class="feature-body">
+            Strategic parking yards around Hyderabad help us move equipment quickly so your workfront does not wait for access.
+          </p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">👷</div>
+          <h3 class="feature-title">Operator options</h3>
+          <p class="feature-body">
+            Supply your own operator or hire ours. Our operators are trained on safe usage, outrigger setup and site coordination.
+          </p>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:32px;">
+        <a href="#!" class="btn-main" data-open-quote="true">Get Pricing for Your Job</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLEET OVERVIEW -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">Fleet overview</div>
+        <h2 class="section-title">Boom Lifts & Scissor Lifts on Hire</h2>
+        <p class="section-lead">
+          Choose the platform type that suits your site – compact electric scissors for indoors, articulated booms for tricky reaches or high-reach
+          telescopic booms outdoors.
+        </p>
+      </div>
+
+      <div class="fleet-grid">
+        <article class="fleet-card reveal">
+          <div class="fleet-tag">Scissor lifts</div>
+          <h3 class="fleet-title">Electric Scissor Lifts</h3>
+          <p class="fleet-meta">Ideal for indoor work, warehouses and level floors.</p>
+          <ul class="fleet-list">
+            <li>Working height approx. 20–40 ft</li>
+            <li>Narrow aisle friendly models</li>
+            <li>Low noise and zero tailpipe emission</li>
+          </ul>
+        </article>
+
+        <article class="fleet-card reveal">
+          <div class="fleet-tag">Articulated booms</div>
+          <h3 class="fleet-title">Knuckle / Articulated Booms</h3>
+          <p class="fleet-meta">For up-and-over access and congested areas.</p>
+          <ul class="fleet-list">
+            <li>Working height approx. 45–80 ft</li>
+            <li>Great for façades, atriums & pipe racks</li>
+            <li>Electric and diesel variants available</li>
+          </ul>
+        </article>
+
+        <article class="fleet-card reveal">
+          <div class="fleet-tag">Telescopic booms</div>
+          <h3 class="fleet-title">Straight Booms</h3>
+          <p class="fleet-meta">Long horizontal outreach for open outdoor sites.</p>
+          <ul class="fleet-list">
+            <li>Working height approx. 80–150 ft</li>
+            <li>Suited for plant shutdowns & tall structures</li>
+            <li>Rough-terrain options with outriggers</li>
+          </ul>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:32px;">
+        <a href="#!" class="btn-main" data-open-quote="true">Match a Lift to My Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS (GREEN SECTION) -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">How renting works</div>
+        <h2 class="section-title">Simple Process from Enquiry to Handover</h2>
+        <p class="section-lead">
+          A short call or message is enough for us to recommend the right equipment and share clear commercials — no confusing line items.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card reveal">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Share your requirement</h3>
+          <p class="step-body">
+            Tell us site location, height needed, duration and whether you need an operator. Photos or drawings are always welcome.
+          </p>
+        </article>
+
+        <article class="step-card reveal">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Get the best-fit option</h3>
+          <p class="step-body">
+            We propose a suitable boom or scissor lift, send pricing and availability, and clarify any site-specific constraints.
+          </p>
+        </article>
+
+        <article class="step-card reveal">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Confirm & schedule</h3>
+          <p class="step-body">
+            Once you confirm, we block the equipment, arrange transport and coordinate gate passes and reporting time with your team.
+          </p>
+        </article>
+
+        <article class="step-card reveal">
+          <div class="step-number">4</div>
+          <h3 class="step-title">Machine on your site</h3>
+          <p class="step-body">
+            The lift reports to site, basic checks are done with your supervisor and the job starts with our support team on call.
+          </p>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:32px;">
+        <a href="#!" class="btn-main" data-open-quote="true">Start a Rental Enquiry</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">Gallery</div>
+        <h2 class="section-title">Lifts in Use at Client Sites</h2>
+        <p class="section-lead">
+          A glimpse of our equipment working on real projects. The vertical slider scrolls automatically – hover to pause and inspect.
+        </p>
+      </div>
+
+      <div class="gallery-wrap reveal">
+        <div class="gallery-track">
+          <div class="gallery-item"  data-open-quote="true"><img src="./images/boo-02.jpg" alt="Boom lift at construction site"></div>
+          <div class="gallery-item"  data-open-quote="true"><img src="./images/boo-03.jpg" alt="Scissor lift inside warehouse"></div>
+          <div class="gallery-item"  data-open-quote="true"><img src="./images/boo-04.png" alt="High reach boom lift"></div>
+          <div class="gallery-item"  data-open-quote="true"><img src="./images/boo-02.jpg" alt="Boom lift at construction site"></div>
+          <div class="gallery-item"  data-open-quote="true"><img src="./images/boo-03.jpg" alt="Scissor lift inside warehouse"></div>
+          <div class="gallery-item"  data-open-quote="true"><img src="./images/boo-04.png" alt="High reach boom lift"></div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:32px;">
+        <a href="#!" class="btn-main" data-open-quote="true">Send Us Your Enquiry</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRY SECTION (FORM FRAGMENT WILL BE LOADED) -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">Enquiry</div>
+        <h2 class="section-title">Tell Us What You Need at Site</h2>
+        <p class="section-lead">
+          Share a few basic details and we’ll come back with the right boom or scissor lift options, availability and a clear quote.
+        </p>
+      </div>
+    </div>
+
+    <div class="form-fragment-wrap" id="form-placeholder">
+      <!-- form.html will be injected here -->
+    </div>
+  </section>
+
+  <!-- FOOTER FRAGMENT -->
+  <div id="footer-placeholder"></div>
+
+  <!-- QUOTE MODAL -->
+  <div id="quote-modal" class="quote-modal">
+    <div class="quote-modal-backdrop"></div>
+    <div class="quote-modal-dialog">
+      <button class="quote-modal-close" aria-label="Close quote form">&times;</button>
+      <div id="quote-modal-content"></div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      /* ---------- LOAD NAVBAR FRAGMENT (with mobile JS) ---------- */
+      (function loadNavbar() {
+        const placeholder = document.getElementById('navbar-placeholder');
+        if (!placeholder) return;
+
+        fetch('navbar.html')
+          .then(res => {
+            if (!res.ok) throw new Error('Navbar load failed');
+            return res.text();
+          })
+          .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            const header = doc.querySelector('header');
+            const overlay = doc.querySelector('.menu-overlay');
+            const mobileMenu = doc.querySelector('.mobile-menu');
+            const style = doc.querySelector('style');
+            const script = doc.querySelector('script');
+
+            if (header) {
+              document.body.insertBefore(header, document.body.firstChild);
+            }
+            if (overlay) document.body.appendChild(overlay);
+            if (mobileMenu) document.body.appendChild(mobileMenu);
+            if (style) document.head.appendChild(style);
+
+            // re-run navbar JS so mobile menu works
+            if (script) {
+              const s = document.createElement('script');
+              s.textContent = script.textContent;
+              document.body.appendChild(s);
+            }
+          })
+          .catch(err => console.error(err));
+      })();
+
+      /* ---------- LOAD FOOTER FRAGMENT ---------- */
+      (function loadFooter() {
+        const target = document.getElementById('footer-placeholder');
+        if (!target) return;
+
+        fetch('footer.html')
+          .then(res => {
+            if (!res.ok) throw new Error('Footer load failed');
+            return res.text();
+          })
+          .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            const footer = doc.querySelector('footer');
+            const style = doc.querySelector('style');
+
+            if (footer) target.appendChild(footer);
+            if (style) document.head.appendChild(style);
+          })
+          .catch(err => console.error(err));
+      })();
+
+      /* ---------- LOAD FORM FRAGMENT (BOTTOM + MODAL TEMPLATE) ---------- */
+      let modalFormTemplate = null;
+
+      (function loadForm() {
+        const target = document.getElementById('form-placeholder');
+        if (!target) return;
+
+        fetch('form.html')
+          .then(res => {
+            if (!res.ok) throw new Error('Form fragment load failed');
+            return res.text();
+          })
+          .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            // we take the FULL section from form.html
+            const formSection = doc.querySelector('section');
+            const style = doc.querySelector('style');
+
+            if (formSection) {
+              // append one copy to page bottom
+              const bottomCopy = formSection.cloneNode(true);
+              target.appendChild(bottomCopy);
+
+              // keep one copy for the popup modal
+              modalFormTemplate = formSection.cloneNode(true);
+            }
+
+            if (style) document.head.appendChild(style);
+          })
+          .catch(err => console.error(err));
+      })();
+
+      /* ---------- SCROLL REVEAL ---------- */
+      const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+
+        revealEls.forEach(el => observer.observe(el));
+      } else {
+        revealEls.forEach(el => el.classList.add('is-visible'));
+      }
+
+      /* ---------- QUOTE MODAL LOGIC ---------- */
+      function openQuoteModal() {
+        const modal = document.getElementById('quote-modal');
+        const content = document.getElementById('quote-modal-content');
+        if (!modal || !content) return;
+
+        content.innerHTML = '';
+
+        if (modalFormTemplate) {
+          // clone full form section from form.html
+          content.appendChild(modalFormTemplate.cloneNode(true));
+        } else {
+          const p = document.createElement('p');
+          p.style.padding = '20px';
+          p.style.background = '#f5f1e7';
+          p.textContent = 'Loading form...';
+          content.appendChild(p);
+        }
+
+        modal.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeQuoteModal() {
+        const modal = document.getElementById('quote-modal');
+        if (!modal) return;
+        modal.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+
+      document.addEventListener('click', function (e) {
+        const trigger = e.target.closest('[data-open-quote="true"]');
+        if (trigger) {
+          e.preventDefault();
+          openQuoteModal();
+        }
+
+        if (e.target.matches('.quote-modal-backdrop') || e.target.matches('.quote-modal-close')) {
+          closeQuoteModal();
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>

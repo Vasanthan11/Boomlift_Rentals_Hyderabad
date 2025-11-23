@@ -1,0 +1,76 @@
+<!-- FOOTER FRAGMENT (footer.html) -->
+
+<!-- GOOGLE FONT (only needed if not already loaded in main page) -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <p class="footer-text">
+      © 2025 BoomLift Rentals Hyderabad. All rights reserved.
+    </p>
+
+    <!-- OPTIONAL SOCIAL ICONS (ONLY DISPLAY IF LINKS PROVIDED) -->
+    <!-- 
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    -->
+  </div>
+</footer>
+
+<style>
+  :root {
+    --dark: #2C3639;
+    --dark-soft: #3F4E4F;
+    --accent: #A27B5C;
+    --cream: #DCD7C9;
+  }
+
+  .site-footer {
+    width: 100%;
+    background: linear-gradient(90deg, var(--dark) 0%, var(--dark-soft) 100%);
+    padding: 28px 0;
+    text-align: center;
+    color: var(--cream);
+    font-family: "Raleway", sans-serif;
+    border-top: 2px solid var(--accent);
+    letter-spacing: 0.5px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+
+  /* SOCIAL ICONS AREA */
+  .footer-social {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .footer-social a {
+    color: var(--accent);
+    font-size: 1.15rem;
+    transition: 0.3s ease;
+  }
+
+  .footer-social a:hover {
+    color: var(--cream);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+    .site-footer {
+      padding: 22px 0;
+    }
+    .footer-text {
+      font-size: 0.8rem;
+    }
+  }
+</style>

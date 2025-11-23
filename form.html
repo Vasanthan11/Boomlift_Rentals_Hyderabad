@@ -1,0 +1,465 @@
+<!-- form.html : ENQUIRY / CONTACT SECTION -->
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Sreda&display=swap" rel="stylesheet">
+
+<section id="contact" class="contact-section">
+  <div class="contact-shell">
+    <div class="contact-layout">
+      
+      <!-- FORM PANEL (FIRST ON MOBILE) -->
+      <form class="contact-form-panel" action="submit_enquiry.php" method="POST">
+        <h3 class="form-title">Get Your Lift Rental Quote</h3>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="full_name">Full Name*</label>
+            <input
+              type="text"
+              id="full_name"
+              name="full_name"
+              placeholder="Enter your full name"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              
+            >
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Contact Number*</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your contact number"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="location">Area / Location</label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              placeholder="Eg: Hitech City, Gachibowli"
+              
+            >
+          </div>
+        </div>
+
+        <!-- class="form-group" -->
+        <div >
+          <label for="equipment">Select Equipment*</label>
+          <select id="equipment" name="equipment" required>
+            <option value="">-- SELECT EQUIPMENT --</option>
+            <option value="Boom Lift">Boom Lift</option>
+            <option value="Scissor Lift">Scissor Lift</option>
+            <!-- <option value="Articulated Boom">Articulated Boom</option> -->
+            <!-- <option value="Telescopic Boom">Telescopic Boom</option> -->
+            <option value="Others">Others</option>
+          </select>
+        </div>
+
+        <!-- Project Details removed as per your request -->
+
+        <div class="form-footer">
+          <!-- <label class="check-wrap">
+            <input type="checkbox" name="newsletter">
+            <span class="check-box"></span>
+            <span class="check-label">Send me rental updates & offers</span>
+          </label> -->
+
+          <button type="submit" class="submit-btn">
+            REQUEST YOUR BEST QUOTE
+          </button>
+        </div>
+      </form>
+
+      <!-- TEXT / INFO PANEL (SECOND ON MOBILE) -->
+      <div class="contact-copy-card">
+        <div class="copy-inner">
+          <h2 class="copy-title">
+            Contact <span>Us.</span>
+          </h2>
+          <p class="copy-body">
+            Share your boom lift or scissor lift requirement in Hyderabad and our team will get back with the best rental options for your site.
+          </p>
+          <p class="copy-body">
+            We carefully review every enquiry and respond with clear pricing, availability, and the right height options for your job.
+          </p>
+          <p class="copy-note">
+            We just need your <strong>Name</strong>, <strong>Contact Number</strong> and <strong>Location</strong> so we can send you a tailored quote.
+          </p>
+
+          <div class="copy-meta">
+            <div class="meta-block">
+              <h3>Call Us</h3>
+              <span>+91 90000 00000</span>
+            </div>
+            <div class="meta-block">
+              <h3>Email</h3>
+              <span>info@boomliftrentalshyderabad.com</span>
+            </div>
+            <div class="meta-block">
+              <h3>Working Hours</h3>
+              <span>Mon – Sat, 9:00 AM to 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="copy-footer-line"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  :root {
+    --dark: #2C3639;
+    --dark-soft: #3F4E4F;
+    --accent: #A27B5C;
+    --cream: #DCD7C9;
+    --text-light: #F7F5EF;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-section {
+    width: 100%;
+    padding: 60px 16px;
+    background:
+      linear-gradient(135deg, var(--cream) 0%, #b7b0a2 35%, var(--dark) 75%, var(--dark-soft) 100%);
+    font-family: "Raleway", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  .contact-shell {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .contact-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* ----- FORM PANEL (LIGHT) ----- */
+  .contact-form-panel {
+    order: 1;
+    background: #f5f1e7;
+    border-radius: 14px;
+    padding: 26px 22px 24px;
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+    color: #1a1a1a;
+    border: 1px solid rgba(44,54,57,0.12);
+  }
+
+  .form-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: #111111;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #383838;
+  }
+
+  .contact-form-panel input,
+  .contact-form-panel select,
+  .contact-form-panel textarea {
+    width: 100%;
+    background: #fbfaf7;
+    border-radius: 4px;
+    border: 1px solid rgba(44,54,57,0.25);
+    padding: 8px 10px;
+    font-size: 0.92rem;
+    color: #111111;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  }
+
+  .contact-form-panel input::placeholder,
+  .contact-form-panel textarea::placeholder {
+    color: #7a756b;
+    font-size: 0.85rem;
+  }
+
+  /* select text visible – dark text */
+  .contact-form-panel select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    color: #111111;
+  }
+
+  .contact-form-panel select option {
+    color: #111111;
+    background: #fbfaf7;
+  }
+
+  .contact-form-panel input:focus,
+  .contact-form-panel select:focus,
+  .contact-form-panel textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(162,123,92,0.25);
+    background: #ffffff;
+  }
+
+  .form-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 12px;
+  }
+
+  .check-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .check-wrap input {
+    display: none;
+  }
+
+  .check-box {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid rgba(44,54,57,0.45);
+    position: relative;
+    flex-shrink: 0;
+    background: #fbfaf7;
+  }
+
+  .check-wrap input:checked + .check-box {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .check-wrap input:checked + .check-box::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 8px;
+    height: 12px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(35deg);
+  }
+
+  .check-label {
+    font-size: 0.8rem;
+    color: #3d3d3d;
+  }
+
+  .submit-btn {
+    align-self: flex-start;
+    margin-top: 4px;
+    padding: 11px 26px;
+    border-radius: 999px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: var(--accent);
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 12px 26px rgba(0,0,0,0.35);
+    transition: background 0.22s ease, color 0.22s ease;
+  }
+
+  /* hover: only color change, no pop-up/lift */
+  .submit-btn:hover {
+    background: #ffffff;
+    color: var(--dark);
+  }
+
+  /* ----- TEXT CARD (DARK) ----- */
+  .contact-copy-card {
+    order: 2;
+    background: linear-gradient(145deg, rgba(44,54,57,0.98), rgba(63,78,79,0.96));
+    border-radius: 14px;
+    padding: 26px 22px 22px;
+    position: relative;
+    box-shadow: 0 16px 35px rgba(0,0,0,0.4);
+    overflow: hidden;
+    color: var(--text-light);
+  }
+
+  .copy-inner {
+    position: relative;
+    z-index: 2;
+  }
+
+  .contact-copy-card::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 110px;
+    height: 110px;
+    background: rgba(162,123,92,0.25);
+    transform: rotate(12deg);
+  }
+
+  .copy-title {
+    font-family: "Sreda", "Raleway", system-ui, sans-serif;
+    font-size: 2.1rem;
+    margin-bottom: 14px;
+    color: #ffffff;
+  }
+
+  .copy-title span {
+    background: rgba(220,215,201,0.18);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  .copy-body {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: rgba(247,245,239,0.9);
+    margin-bottom: 10px;
+  }
+
+  .copy-note {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: rgba(247,245,239,0.8);
+    margin-top: 8px;
+  }
+
+  .copy-note strong {
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .copy-meta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 18px;
+    font-size: 0.9rem;
+  }
+
+  .meta-block h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--cream);
+  }
+
+  .meta-block span {
+    display: block;
+    margin-top: 4px;
+    color: var(--text-light);
+  }
+
+  .copy-footer-line {
+    margin-top: 18px;
+    height: 3px;
+    width: 100%;
+    background: var(--accent);
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (min-width: 768px) {
+    .contact-section {
+      padding: 80px 24px;
+    }
+
+    .form-row {
+      flex-direction: row;
+    }
+
+    .form-group {
+      width: 50%;
+    }
+
+    .form-footer {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .contact-layout {
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    .contact-form-panel,
+    .contact-copy-card {
+      width: 50%;
+    }
+
+    .contact-form-panel {
+      order: 1;
+      padding: 32px 30px 28px;
+    }
+
+    .contact-copy-card {
+      order: 2;
+      padding: 34px 30px 24px;
+    }
+
+    .copy-meta {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 520px) {
+    .contact-section {
+      padding: 50px 12px;
+    }
+    .contact-form-panel,
+    .contact-copy-card {
+      padding: 22px 18px;
+    }
+    .copy-title {
+      font-size: 1.8rem;
+    }
+  }
+</style>

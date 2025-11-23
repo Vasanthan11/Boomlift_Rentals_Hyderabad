@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us – Boom & Scissor Lift Rental Hyderabad</title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Sreda&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark: #2C3639;
+      --dark-soft: #3F4E4F;
+      --accent: #A27B5C;
+      --cream: #DCD7C9;
+      --light-bg: #F5F1E7;
+      --green: #1e3d3a;
+      --text-main: #1b1b1b;
+      --muted: #6f7476;
+      --radius: 14px;
+      --shadow: 0 18px 40px rgba(0,0,0,0.15);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Raleway", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #101314;
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 70px 20px;
+    }
+
+    /* ---------------- HERO ---------------- */
+    .contact-hero {
+      background:
+        linear-gradient(120deg, rgba(12, 19, 22, 0.96), rgba(34, 45, 47, 0.92)),
+        url("./images/contact-hero.jpg") center/cover no-repeat;
+      color: #fff;
+      padding: 90px 20px 70px;
+    }
+
+    .contact-hero-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-copy h1 {
+      font-family: "Sreda", "Raleway", sans-serif;
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+    }
+
+    .hero-copy h1 span { color: var(--accent); }
+
+    .hero-tagline {
+      font-size: 0.85rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(235, 232, 224, 0.9);
+      margin-bottom: 14px;
+    }
+
+    .hero-copy p {
+      max-width: 620px;
+      color: #f2f2f2;
+      margin-bottom: 18px;
+      font-size: 0.98rem;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(220, 215, 201, 0.7);
+      font-size: 0.8rem;
+      color: #f7f5ef;
+      margin-bottom: 10px;
+    }
+
+    .hero-pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #25d366;
+      box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.3);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .btn-main {
+      padding: 11px 26px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .btn-main:hover { background: #ffffff; color: var(--dark); }
+
+    .btn-ghost {
+      padding: 11px 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(220, 215, 201, 0.85);
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: transparent;
+      color: #f7f5ef;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(220, 215, 201, 0.16);
+      border-color: #ffffff;
+    }
+
+    .hero-card {
+      background: rgba(7, 13, 16, 0.9);
+      border-radius: 18px;
+      padding: 24px 22px 20px;
+      border: 1px solid rgba(220, 215, 201, 0.2);
+      box-shadow: 0 26px 58px rgba(0,0,0,0.7);
+      font-size: 0.88rem;
+    }
+
+    .hero-card h2 {
+      font-size: 1rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(245, 241, 230, 0.95);
+      margin-bottom: 12px;
+    }
+
+    .hero-info-row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .hero-info-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-info-label {
+      color: rgba(232, 229, 221, 0.9);
+    }
+
+    .hero-info-value {
+      font-weight: 600;
+      color: var(--cream);
+    }
+
+    .hero-card small {
+      color: rgba(232, 229, 221, 0.9);
+      display: block;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    /* ------------- GENERIC SECTIONS ------------- */
+    .section-light { background: var(--light-bg); }
+    .section-cream { background: var(--cream); }
+    .section-dark {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark-soft) 100%);
+      color: var(--cream);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .section-kicker {
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-family: "Sreda";
+      font-size: 2rem;
+      margin-bottom: 6px;
+    }
+
+    .section-lead {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .section-dark .section-lead { color: rgba(235, 232, 224, 0.9); }
+
+    /* ------------- CONTACT GRID ------------- */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .contact-card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px 22px 20px;
+    }
+
+    .contact-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: var(--dark);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .contact-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: rgba(44, 54, 57, 0.07);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .contact-text strong { display: block; }
+
+    .pill-note {
+      margin-top: 12px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(44, 54, 57, 0.04);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .response-card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px 22px 18px;
+      font-size: 0.9rem;
+    }
+
+    .response-tag {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .response-card ul {
+      margin-top: 8px;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .response-card li { margin-bottom: 4px; }
+
+    /* ------------- COVERAGE CARDS ------------- */
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .coverage-card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      padding: 18px 18px 16px;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.09);
+      font-size: 0.9rem;
+    }
+
+    .coverage-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    .coverage-card h3 {
+      font-size: 1.02rem;
+      margin-bottom: 6px;
+      color: var(--dark);
+    }
+
+    .coverage-card p { color: var(--muted); }
+
+    /* ------------- FAQ SECTION ------------- */
+    .faq-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 32px;
+      align-items: flex-start;
+    }
+
+    .faq-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .faq-item + .faq-item { margin-top: 14px; }
+
+    .faq-q {
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+
+    .faq-a {
+      color: rgba(235, 232, 224, 0.9);
+    }
+
+    .cta-panel {
+      background: rgba(10, 18, 20, 0.9);
+      border-radius: var(--radius);
+      padding: 20px 20px 18px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.5);
+      font-size: 0.9rem;
+    }
+
+    .cta-panel h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .cta-panel p { color: rgba(235, 232, 224, 0.9); }
+
+    .cta-panel .btn-main {
+      margin-top: 16px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* ------------- FORM PLACEHOLDER ------------- */
+    #form-section { background: var(--light-bg); }
+
+    /* .form-fragment-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 10px 20px 70px;
+    } */
+
+    /* ------------- SCROLL REVEAL ------------- */
+    .reveal,
+    .reveal-left,
+    .reveal-right {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal-left { transform: translateX(-30px); }
+    .reveal-right { transform: translateX(30px); }
+
+    .is-visible {
+      opacity: 1;
+      transform: translateX(0) translateY(0);
+    }
+
+    /* ------------- MODAL (POPUP FORM) ------------- */
+    .quote-modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      z-index: 2000;
+    }
+
+    .quote-modal.is-open { display: block; }
+
+    .quote-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.78);
+    }
+
+    .quote-modal-dialog {
+      position: relative;
+      max-width: 780px;
+      margin: 40px auto;
+      padding: 0;
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .quote-modal-close {
+      position: absolute;
+      top: 10px;
+      right: 14px;
+      border: none;
+      background: transparent;
+      color: #ffffff;
+      font-size: 26px;
+      line-height: 1;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    #quote-modal-content .contact-section {
+      border-radius: 18px;
+      box-shadow: none;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .contact-hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+      }
+      .hero-card { order: -1; }
+      .contact-grid { grid-template-columns: minmax(0, 1fr); }
+      .coverage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .faq-layout { grid-template-columns: minmax(0, 1fr); }
+      .quote-modal-dialog { margin: 20px 12px; }
+    }
+
+    @media (max-width: 560px) {
+      .container { padding: 55px 14px; }
+      .coverage-grid { grid-template-columns: minmax(0, 1fr); }
+      .hero-copy h1 { font-size: 1.9rem; }
+    }
+
+    /* FOOTER FALLBACK (if footer.html missing) */
+    footer {
+      background: #111317;
+      color: #d7d7d7;
+      padding: 26px 0;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR FRAGMENT -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- HERO -->
+  <section class="contact-hero">
+    <div class="contact-hero-inner reveal-left">
+      <div class="hero-copy">
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          <span>Hyderabad · Boom & Scissor Lift Hire</span>
+        </div>
+        <div class="hero-tagline">Talk directly to the rental team</div>
+        <h1>Get in touch before your <span>next work at height</span>.</h1>
+        <p>
+          Share your site details, required height and timelines. We’ll help you choose the right boom or scissor lift and confirm
+          availability before your workfront opens.
+        </p>
+        <div class="hero-actions">
+          <a href="#form-section" class="btn-main" data-open-quote="true">Request a callback</a>
+          <a href="https://wa.me/919999999999" class="btn-ghost" target="_blank" rel="noopener">Send details on WhatsApp</a>
+        </div>
+      </div>
+
+      <aside class="hero-card reveal-right">
+        <h2>Quick contact snapshot</h2>
+        <div class="hero-info-row">
+          <div class="hero-info-item">
+            <span class="hero-info-label">Primary line</span>
+            <span class="hero-info-value">+91 99999 99999</span>
+          </div>
+          <div class="hero-info-item">
+            <span class="hero-info-label">Response window</span>
+            <span class="hero-info-value">Within 60 mins</span>
+          </div>
+        </div>
+        <div class="hero-info-row">
+          <div class="hero-info-item">
+            <span class="hero-info-label">Service hours</span>
+            <span class="hero-info-value">Mon–Sat, 9am–7pm</span>
+          </div>
+          <div class="hero-info-item">
+            <span class="hero-info-label">Emergency jobs</span>
+            <span class="hero-info-value">24/7 support</span>
+          </div>
+        </div>
+        <small>
+          Share drawings/photos on WhatsApp or email for faster equipment suggestion, gate-pass documents and pricing.
+        </small>
+      </aside>
+    </div>
+  </section>
+
+  <!-- DIRECT CONTACT + RESPONSE INFO -->
+  <section class="section-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">Contact options</div>
+        <h2 class="section-title">Choose how you’d like to reach us</h2>
+        <p class="section-lead">
+          Call for urgent jobs, email for detailed scopes, or use the form for quick callbacks. We’ll route you to the right coordinator.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal-left">
+          <h3>Direct contact details</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#9742;</div>
+            <div class="contact-text">
+              <strong>Phone / WhatsApp</strong>
+              <span>+91 99999 99999</span>
+              <span style="font-size:0.86rem;color:var(--muted);">Best for urgent or same-day requirements.</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#9993;</div>
+            <div class="contact-text">
+              <strong>Email</strong>
+              <span>info@boomliftrentalsyderabad.com</span>
+              <span style="font-size:0.86rem;color:var(--muted);">Share BOQs, drawings or long-term rental plans.</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#128205;</div>
+            <div class="contact-text">
+              <strong>Primary service zone</strong>
+              <span>Hyderabad & nearby Telangana industrial belts</span>
+            </div>
+          </div>
+
+          <div class="pill-note">
+            Office hours: <strong>Mon – Sat, 9:00 AM to 7:00 PM</strong>. Emergency support on planned shutdowns available 24/7.
+          </div>
+        </div>
+
+        <div class="response-card reveal-right">
+          <div class="response-tag">What to keep ready</div>
+          <h3>Details that help us respond faster</h3>
+          <p>Share these points when you contact us. It helps us confirm availability and pricing quickly:</p>
+          <ul>
+            <li>Site location & working height required</li>
+            <li>Indoor / outdoor & floor condition (paved / compacted / rough)</li>
+            <li>Expected duration & working shift (day / night)</li>
+            <li>Whether you need our operator or providing your own</li>
+          </ul>
+          <p style="margin-top:10px;">
+            Not sure about lift type? No problem – tell us what work has to be done and we’ll suggest options.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVERAGE AREAS -->
+  <section class="section-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">Coverage</div>
+        <h2 class="section-title">Where we usually deploy our lifts</h2>
+        <p class="section-lead">
+          We focus on Hyderabad and nearby industrial clusters so that transport time is predictable and support teams can reach you quickly.
+        </p>
+      </div>
+
+      <div class="coverage-grid">
+        <article class="coverage-card reveal-left">
+          <div class="coverage-label">Zone 01</div>
+          <h3>Within Hyderabad city limits</h3>
+          <p>
+            IT parks, malls, commercial complexes, hospitals and warehouses around Madhapur, Gachibowli, Hitec City, Banjara Hills and central areas.
+          </p>
+        </article>
+
+        <article class="coverage-card reveal">
+          <div class="coverage-label">Zone 02</div>
+          <h3>Industrial & logistics belts</h3>
+          <p>
+            Pharma, manufacturing and logistics hubs around Patancheru, Kothur, Shamirpet and nearby corridors – regular movement of boom & scissor lifts.
+          </p>
+        </article>
+
+        <article class="coverage-card reveal-right">
+          <div class="coverage-label">Zone 03</div>
+          <h3>Planned outstation projects</h3>
+          <p>
+            Long-duration or shutdown projects across Telangana and neighbouring states can be taken up with advance planning and site assessment.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + CTA DARK BAND -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">Help & FAQs</div>
+        <h2 class="section-title">Common questions from Hyderabad clients</h2>
+        <p class="section-lead">
+          We see similar doubts across projects. Here are a few quick answers so you can plan confidently.
+        </p>
+      </div>
+
+      <div class="faq-layout">
+        <div class="faq-list reveal-left">
+          <div class="faq-item">
+            <p class="faq-q">Do you visit the site before confirming a rental?</p>
+            <p class="faq-a">For complex jobs we may visit or review site photos/video. For straightforward works, details shared over call or WhatsApp are usually enough.</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">Can one machine be shared between multiple locations?</p>
+            <p class="faq-a">Yes, as long as travel time and access conditions are workable. We’ll factor this into the quote and schedule.</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">What happens if rain or approvals delay the work?</p>
+            <p class="faq-a">Inform us at the earliest. In many cases we can reschedule or adjust reporting based on machine availability and transport commitments.</p>
+          </div>
+        </div>
+
+        <aside class="cta-panel reveal-right">
+          <h3>Need a second opinion on your access plan?</h3>
+          <p>
+            If you’re unsure whether scaffolding, boom lifts or scissor lifts are best for your job, send us your layout and scope of work.
+            We’ll share practical suggestions based on similar projects we’ve handled.
+          </p>
+          <p style="margin-top:8px;">
+            You’ll get clear notes on options, pros/cons and typical cost differences so your team can take a call.
+          </p>
+          <button class="btn-main" data-open-quote="true">Send us your project details</button>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM SECTION (fragment from form.html) -->
+  <section id="form-section" class="section-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">Enquiry</div>
+        <h2 class="section-title">Share your requirements in one place</h2>
+        <p class="section-lead">
+          Use this form if you prefer to type everything once – we’ll respond by phone or email with suggested equipment and clear pricing.
+        </p>
+      </div>
+    </div>
+
+    <div class="form-fragment-wrap" id="form-placeholder">
+      <!-- form.html will be injected here -->
+    </div>
+  </section>
+
+  <!-- FOOTER FRAGMENT -->
+  <div id="footer-placeholder"></div>
+
+  <!-- QUOTE MODAL (popup uses same form as above) -->
+  <div id="quote-modal" class="quote-modal">
+    <div class="quote-modal-backdrop"></div>
+    <div class="quote-modal-dialog">
+      <button class="quote-modal-close" aria-label="Close enquiry form">&times;</button>
+      <div id="quote-modal-content"></div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      /* ---------- LOAD NAVBAR FRAGMENT ---------- */
+      (function loadNavbar() {
+        const placeholder = document.getElementById('navbar-placeholder');
+        if (!placeholder) return;
+
+        fetch('navbar.html')
+          .then(res => {
+            if (!res.ok) throw new Error('Navbar load failed');
+            return res.text();
+          })
+          .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            const header = doc.querySelector('header');
+            const overlay = doc.querySelector('.menu-overlay');
+            const mobileMenu = doc.querySelector('.mobile-menu');
+            const style = doc.querySelector('style');
+            const script = doc.querySelector('script');
+
+            if (header) document.body.insertBefore(header, document.body.firstChild);
+            if (overlay) document.body.appendChild(overlay);
+            if (mobileMenu) document.body.appendChild(mobileMenu);
+            if (style) document.head.appendChild(style);
+
+            if (script) {
+              const s = document.createElement('script');
+              s.textContent = script.textContent;
+              document.body.appendChild(s);
+            }
+          })
+          .catch(err => console.error(err));
+      })();
+
+      /* ---------- LOAD FOOTER FRAGMENT ---------- */
+      (function loadFooter() {
+        const target = document.getElementById('footer-placeholder');
+        if (!target) return;
+
+        fetch('footer.html')
+          .then(res => {
+            if (!res.ok) throw new Error('Footer load failed');
+            return res.text();
+          })
+          .then(html => {
+            target.innerHTML = html;
+          })
+          .catch(err => console.error(err));
+      })();
+
+      /* ---------- LOAD FORM FRAGMENT (for bottom + modal) ---------- */
+      let modalFormTemplate = null;
+
+      (function loadForm() {
+        const target = document.getElementById('form-placeholder');
+        if (!target) return;
+
+        fetch('form.html')
+          .then(res => {
+            if (!res.ok) throw new Error('Form fragment load failed');
+            return res.text();
+          })
+          .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            const section = doc.querySelector('section');
+            const style = doc.querySelector('style');
+
+            if (section) target.appendChild(section);
+            if (style) document.head.appendChild(style);
+
+            // store full section as template for modal
+            const formSection = target.querySelector('.contact-section');
+            if (formSection) {
+              modalFormTemplate = formSection.cloneNode(true);
+            }
+          })
+          .catch(err => console.error(err));
+      })();
+
+      /* ---------- SCROLL REVEAL ---------- */
+      const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+
+        revealEls.forEach(el => observer.observe(el));
+      } else {
+        revealEls.forEach(el => el.classList.add('is-visible'));
+      }
+
+      /* ---------- QUOTE MODAL LOGIC ---------- */
+      function openQuoteModal() {
+        const modal = document.getElementById('quote-modal');
+        const content = document.getElementById('quote-modal-content');
+        if (!modal || !content) return;
+
+        content.innerHTML = '';
+        if (modalFormTemplate) {
+          content.appendChild(modalFormTemplate.cloneNode(true));
+        } else {
+          const p = document.createElement('p');
+          p.style.padding = '22px';
+          p.style.background = '#F5F1E7';
+          p.textContent = 'Loading enquiry form...';
+          content.appendChild(p);
+        }
+
+        modal.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeQuoteModal() {
+        const modal = document.getElementById('quote-modal');
+        if (!modal) return;
+        modal.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+
+      document.addEventListener('click', function (e) {
+        const trigger = e.target.closest('[data-open-quote="true"]');
+        if (trigger) {
+          e.preventDefault();
+          openQuoteModal();
+        }
+
+        if (e.target.matches('.quote-modal-backdrop') || e.target.matches('.quote-modal-close')) {
+          closeQuoteModal();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

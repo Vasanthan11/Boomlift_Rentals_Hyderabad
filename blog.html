@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Boom & Scissor Lift Rental Blog – Hyderabad</title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Sreda&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark: #2C3639;
+      --dark-soft: #3F4E4F;
+      --accent: #A27B5C;
+      --cream: #DCD7C9;
+      --light-bg: #F5F1E7;
+      --text-main: #1b1b1b;
+      --muted: #6f7476;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Raleway", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      /* background: #101314; */
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    main {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* --------- SECTIONS & TYPO --------- */
+    .section {
+      padding: 70px 0;
+    }
+
+    /* .section-light {
+      background: var(--light-bg);
+    } */
+
+    /* .section-cream {
+      background: var(--cream);
+    } */
+
+    .section-dark {
+      background: linear-gradient(135deg, #1e3d3a 0%, #182b29 100%);
+      color: #ffffff;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .section-kicker {
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-family: "Sreda", "Raleway", system-ui, sans-serif;
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .section-lead {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 0.96rem;
+      color: var(--muted);
+    }
+
+    .section-dark .section-lead {
+      color: rgba(235, 232, 224, 0.9);
+    }
+
+    /* --------- HERO --------- */
+    .hero-wrapper {
+      padding: 90px 0 40px;
+      /* background: var(--cream); */
+    }
+
+    .hero-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: minmax(0,1.4fr) minmax(0,1fr);
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-text-block {
+      max-width: 640px;
+    }
+
+    .hero-kicker {
+      font-size: 0.82rem;
+      color: var(--muted);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .hero-title {
+      font-family: "Sreda", "Raleway", system-ui, sans-serif;
+      font-size: 2.4rem;
+      line-height: 1.08;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .hero-title span {
+      color: var(--accent);
+    }
+
+    .hero-text {
+      font-size: 0.98rem;
+      color: var(--text-main);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .hero-meta {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .btn-main {
+      padding: 11px 26px;
+      border-radius: 999px;
+      border: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: #ffffff;
+      cursor: pointer;
+      transition: background 0.22s ease, color 0.22s ease, transform 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .btn-main:hover {
+      background: #ffffff;
+      color: var(--dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      padding: 11px 22px;
+      border-radius: 999px;
+      border: 1px solid rgba(44,54,57,0.25);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: transparent;
+      color: var(--dark-soft);
+      cursor: pointer;
+      transition: background 0.22s ease, color 0.22s ease, border-color 0.22s ease;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(44,54,57,0.06);
+      border-color: var(--dark-soft);
+    }
+
+    .hero-side-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 22px 20px 18px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+      border: 1px solid rgba(44, 54, 57, 0.08);
+    }
+
+    .hero-side-title {
+      font-size: 0.9rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .hero-side-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    .hero-side-list li {
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(44,54,57,0.08);
+    }
+
+    .hero-side-list li:last-child {
+      border-bottom: none;
+    }
+
+    .hero-side-highlight {
+      margin-top: 10px;
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    /* --------- BLOG GRID --------- */
+    .section-block {
+      background: var(--dark);
+      color: white;
+      border-radius: 14px;
+      border: 1px solid rgba(44,54,57,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 26px 20px 28px;
+      margin-top: 40px;
+    }
+
+    .section-block-header {
+      margin-bottom: 18px;
+    }
+
+    .section-block-title {
+      font-family: "Sreda", "Raleway", system-ui, sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 4px;
+    }
+
+    .section-block-sub {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .blog-card {
+      background: #ffffff;
+      border-radius: 14px;
+      border: 1px solid rgba(44,54,57,0.08);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      font-size: 0.92rem;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 34px rgba(0,0,0,0.12);
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 220px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .blog-image-1 { background-image: url("./images/boo-03.jpg"); }
+    .blog-image-2 { background-image: url("./images/sci-main.jpg"); }
+    .blog-image-3 { background-image: url("./images/boo-04.png"); }
+    .blog-image-4 { background-image: url("./images/sci-02.jpg"); }
+
+    .blog-body {
+      padding: 14px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .blog-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: rgba(220,215,201,0.45);
+      color: var(--dark-soft);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .blog-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .blog-summary {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .blog-list {
+      margin: 4px 0 0;
+      padding-left: 18px;
+      font-size: 0.86rem;
+      color: var(--text-main);
+    }
+
+    .blog-list li {
+      margin-bottom: 2px;
+    }
+
+    /* --------- QUICK GUIDES STRIP --------- */
+    .guides-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .guide-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px 14px 18px;
+      border: 1px solid rgba(44,54,57,0.08);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+      font-size: 0.9rem;
+    }
+
+    .guide-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    .guide-title {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .guide-body {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* --------- FAQ / HELP SECTION --------- */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .faq-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .faq-item {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(235, 232, 224, 0.35);
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-q {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .faq-a {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    .faq-highlight-box {
+      background: rgba(12, 19, 21, 0.86);
+      border-radius: 14px;
+      padding: 20px 18px 18px;
+      border: 1px solid rgba(220, 215, 201, 0.25);
+      font-size: 0.9rem;
+      color: rgba(235, 232, 224, 0.96);
+    }
+
+    .faq-highlight-box h3 {
+      font-family: "Sreda", "Raleway", system-ui, sans-serif;
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    .faq-highlight-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      font-size: 0.9rem;
+    }
+
+    .faq-highlight-list li {
+      padding: 5px 0;
+      position: relative;
+      padding-left: 16px;
+    }
+
+    .faq-highlight-list li::before {
+      content: "•";
+      position: absolute;
+      left: 3px;
+      top: 0;
+      color: var(--cream);
+    }
+
+    /* --------- MODAL (POPUP FORM) --------- */
+    .quote-modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      z-index: 2000;
+    }
+
+    .quote-modal.is-open {
+      display: block;
+    }
+
+    .quote-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.78);
+      backdrop-filter: blur(3px);
+    }
+
+    .quote-modal-dialog {
+      position: relative;
+      max-width: 840px;
+      margin: 40px auto;
+      padding: 0;
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .quote-modal-close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      border: none;
+      background: transparent;
+      color: #ffffff;
+      font-size: 26px;
+      line-height: 1;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    #quote-modal-content .contact-section {
+      border-radius: 18px;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    /* --------- SCROLL REVEAL --------- */
+    .reveal,
+    .reveal-left,
+    .reveal-right {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal-left {
+      transform: translateX(-30px);
+    }
+
+    .reveal-right {
+      transform: translateX(30px);
+    }
+
+    .is-visible {
+      opacity: 1;
+      transform: translateX(0) translateY(0);
+    }
+
+    /* --------- RESPONSIVE --------- */
+    @media (max-width: 992px) {
+      .hero-inner {
+        grid-template-columns: minmax(0,1fr);
+        padding-top: 100px;
+      }
+
+      .hero-side-card {
+        margin-top: 10px;
+      }
+
+      .blog-grid {
+        grid-template-columns: minmax(0,1fr);
+      }
+
+      .guides-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+
+      .faq-grid {
+        grid-template-columns: minmax(0,1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      main {
+        padding: 0 14px 70px;
+      }
+
+      .hero-inner {
+        padding: 0 14px;
+      }
+
+      .hero-title {
+        font-size: 1.8rem;
+      }
+
+      .hero-wrapper {
+        padding-top: 80px;
+      }
+
+      .guides-grid {
+        grid-template-columns: minmax(0,1fr);
+      }
+
+      .quote-modal-dialog {
+        margin: 20px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR FRAGMENT -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- HERO -->
+  <header class="hero-wrapper">
+    <div class="hero-inner">
+      <div class="hero-text-block reveal-left">
+        <div class="hero-kicker">Access Equipment Knowledge Hub</div>
+        <h1 class="hero-title">
+          Practical <span>Height Access Tips</span> for Projects in Hyderabad.
+        </h1>
+        <p class="hero-text">
+          Short guides and checklists to help project managers, safety teams and facility engineers choose the right boom or scissor lift, prepare sites correctly and avoid costly downtime on Hyderabad and Telangana projects.
+        </p>
+        <p class="hero-meta">
+          We keep the focus on real-world rental scenarios – not theory – so your next job at height is safer, smoother and more predictable.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#!" class="btn-main" data-open-quote="true">Ask a Rental Question</a>
+          <a href="#latest-articles" class="btn-ghost">Browse Articles</a>
+        </div>
+      </div>
+
+      <aside class="hero-side-card reveal-right">
+        <p class="hero-side-title">Topics we frequently cover</p>
+        <ul class="hero-side-list">
+          <li>Choosing between boom lifts & scissor lifts</li>
+          <li>Planning access for busy IT parks & malls</li>
+          <li>Working at height during shutdowns</li>
+          <li>Basic safety & MEWP compliance in India</li>
+        </ul>
+        <p class="hero-side-highlight">
+          New posts are added as we see patterns in customer questions from Hyderabad, Patancheru, Kothur and nearby industrial belts.
+        </p>
+      </aside>
+    </div>
+  </header>
+
+  <main class="hero-wrapper">
+
+    <!-- LATEST ARTICLES -->
+    <section id="latest-articles" class="section section-light">
+      <div class="section-block reveal">
+        <div class="section-block-header">
+          <p class="section-block-sub" style="color: white; margin-bottom: 10px;">Blog · Boom & Scissor Lift Rentals</p>
+          <h2 class="section-block-title">Latest Rental Insights</h2>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-image blog-image-1"></div>
+            <div class="blog-body">
+              <span class="blog-tag">Planning · boom lifts</span>
+              <h3 class="blog-title">Boom Lift or Scissor Lift – Which One Fits Your Site?</h3>
+              <p class="blog-summary">
+                Both platforms work at height, but they behave very differently on site. Use this quick comparison to decide which one fits your
+                layout, job type and safety requirements.
+              </p>
+              <ul class="blog-list">
+                <li>When a straight vertical lift is enough</li>
+                <li>Jobs that demand outreach or “up & over” reach</li>
+                <li>How aisle width and floor condition influence your choice</li>
+                <li>Typical examples from Hyderabad projects we support</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-image blog-image-2"></div>
+            <div class="blog-body">
+              <span class="blog-tag">Indoor · scissor lifts</span>
+              <h3 class="blog-title">Preparing Tech Park Floors for Electric Scissor Lifts</h3>
+              <p class="blog-summary">
+                Indoor scissors are safe for finished floors, but only if a few simple checks are done beforehand. This guide walks facility teams
+                through basic floor and access checks.
+              </p>
+              <ul class="blog-list">
+                <li>Confirming floor capacity with building teams</li>
+                <li>Ramp, door and lift dimensions you should measure</li>
+                <li>Power and charging points you’ll need on each floor</li>
+                <li>Simple traffic control around the work area</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-image blog-image-3"></div>
+            <div class="blog-body">
+              <span class="blog-tag">Safety · site setup</span>
+              <h3 class="blog-title">Site Safety Basics Before a MEWP Reports to Gate</h3>
+              <p class="blog-summary">
+                A lot of safety issues can be avoided if sites prepare a few things before the machine even arrives. Here’s a simple checklist we
+                recommend to all clients.
+              </p>
+              <ul class="blog-list">
+                <li>Clear access path from main gate to work area</li>
+                <li>Level parking and emergency access planning</li>
+                <li>Designated briefing time for your supervisors</li>
+                <li>Document & permit checks on the first day</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-image blog-image-4"></div>
+            <div class="blog-body">
+              <span class="blog-tag">Costs · rentals</span>
+              <h3 class="blog-title">Four Common Reasons Rental Costs Go Up – And How to Avoid Them</h3>
+              <p class="blog-summary">
+                Many cost overruns happen due to avoidable delays and scope changes. Learn what typically drives rental charges and what you can do
+                while planning the job.
+              </p>
+              <ul class="blog-list">
+                <li>Idle machines because other trades aren’t ready</li>
+                <li>Incorrect height estimation at planning stage</li>
+                <li>Last-minute access changes at the site</li>
+                <li>How better planning can keep your quote under control</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK GUIDES STRIP -->
+    <section class="section section-cream">
+      <div class="section-header reveal">
+        <p class="section-kicker">Quick guides</p>
+        <h2 class="section-title">Short Reads for Busy Project Teams</h2>
+        <p class="section-lead">
+          These bite-sized guides can be shared on your internal groups so everyone – from planning to safety – is on the same page before the machine reaches site.
+        </p>
+      </div>
+
+      <div class="section-block reveal" style="background-color: var(--dark);">
+        <div class="guides-grid">
+          <article class="guide-card">
+            <p class="guide-label">Guide 01</p>
+            <h3 class="guide-title">Checklist Before You Request a Boom Lift Quote</h3>
+            <p class="guide-body">
+              Simple questions you should answer about height, reach, site photos and job duration so we can send an accurate quote in the first attempt.
+            </p>
+          </article>
+
+          <article class="guide-card">
+            <p class="guide-label">Guide 02</p>
+            <h3 class="guide-title">Explaining Your Job to a Machine Operator</h3>
+            <p class="guide-body">
+              How to brief the operator on access routes, work zones, safety rules and communication so everybody works confidently and calmly.
+            </p>
+          </article>
+
+          <article class="guide-card">
+            <p class="guide-label">Guide 03</p>
+            <h3 class="guide-title">Night-Shift Work with MEWPs</h3>
+            <p class="guide-body">
+              Extra precautions to take when jobs are scheduled at night – from lighting and supervision to fatigue management and emergency planning.
+            </p>
+          </article>
+        </div>
+
+        <div style="text-align:center;margin-top:24px;">
+          <a href="#!" class="btn-main" data-open-quote="true">Request a Copy of Our Checklists</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ / HELP SECTION -->
+    <section class="section">
+      <div class="section-header reveal">
+        <p class="section-kicker">Help & FAQs</p>
+        <h2 class="section-title">Common Questions from Hyderabad Clients</h2>
+        <p class="section-lead">
+          Over time we noticed the same doubts appearing across projects. Here are a few of them, along with straightforward answers from our rental team.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="reveal-left">
+          <ul class="faq-list">
+            <li class="faq-item">
+              <p class="faq-q">Do you visit the site before confirming a rental?</p>
+              <p class="faq-a">
+                For straightforward jobs we can often confirm based on drawings and photos. For complex access or tight deadlines, a short site visit or
+                video call helps us suggest a safer option.
+              </p>
+            </li>
+            <li class="faq-item">
+              <p class="faq-q">Can one machine be shared between multiple locations in the city?</p>
+              <p class="faq-a">
+                Yes, provided loading, permits and travel time are considered upfront. We frequently plan multi-location schedules across Hyderabad and
+                nearby industrial areas.
+              </p>
+            </li>
+            <li class="faq-item">
+              <p class="faq-q">What if weather or approvals delay my work?</p>
+              <p class="faq-a">
+                Let us know as soon as you foresee a delay. In many cases we can reschedule or adjust reporting times, especially for long-duration
+                rentals.
+              </p>
+            </li>
+            <li class="faq-item">
+              <p class="faq-q">Can you support shutdowns running 24/7?</p>
+              <p class="faq-a">
+                Yes, for planned shutdowns we can arrange round-the-clock support and additional backup machines when needed, subject to prior
+                confirmation and availability.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="faq-highlight-box reveal-right">
+          <h3>Need a Second Opinion on Your Access Plan?</h3>
+          <p>
+            If you’re unsure whether scaffolding, boom lifts or scissors are the best fit, send us your layout and scope of work. We’ll share a
+            practical view based on jobs we have already executed in similar environments.
+          </p>
+          <ul class="faq-highlight-list">
+            <li>Send drawings, photos or even a rough sketch.</li>
+            <li>We’ll respond with suggested machine types and height bands.</li>
+            <li>Clear notes on pros/cons so your team can decide.</li>
+          </ul>
+
+          <div style="margin-top:18px;">
+            <a href="#!" class="btn-main" data-open-quote="true">Send Project Details</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER FRAGMENT -->
+  <div id="footer-placeholder"></div>
+
+  <!-- QUOTE MODAL (REUSES form.html) -->
+  <div id="quote-modal" class="quote-modal">
+    <div class="quote-modal-backdrop"></div>
+    <div class="quote-modal-dialog">
+      <button class="quote-modal-close" aria-label="Close quote form">&times;</button>
+      <div id="quote-modal-content"></div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      /* ---------- LOAD NAVBAR FRAGMENT ---------- */
+      (function loadNavbar() {
+        const placeholder = document.getElementById('navbar-placeholder');
+        if (!placeholder) return;
+
+        fetch('navbar.html')
+          .then(res => {
+            if (!res.ok) throw new Error('Navbar load failed');
+            return res.text();
+          })
+          .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            const header = doc.querySelector('header');
+            const overlay = doc.querySelector('.menu-overlay');
+            const mobileMenu = doc.querySelector('.mobile-menu');
+            const style = doc.querySelector('style');
+            const script = doc.querySelector('script');
+
+            if (header) {
+              document.body.insertBefore(header, document.body.firstChild);
+            }
+            if (overlay) document.body.appendChild(overlay);
+            if (mobileMenu) document.body.appendChild(mobileMenu);
+            if (style) document.head.appendChild(style);
+
+            if (script) {
+              const s = document.createElement('script');
+              s.textContent = script.textContent;
+              document.body.appendChild(s);
+            }
+          })
+          .catch(err => console.error(err));
+      })();
+
+      /* ---------- LOAD FOOTER FRAGMENT ---------- */
+      (function loadFooter() {
+        const target = document.getElementById('footer-placeholder');
+        if (!target) return;
+
+        fetch('footer.html')
+          .then(res => {
+            if (!res.ok) throw new Error('Footer load failed');
+            return res.text();
+          })
+          .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            const footer = doc.querySelector('footer');
+            const style = doc.querySelector('style');
+
+            if (footer) target.appendChild(footer);
+            if (style) document.head.appendChild(style);
+          })
+          .catch(err => console.error(err));
+      })();
+
+      /* ---------- LOAD FORM FRAGMENT FOR POPUP ONLY ---------- */
+      let modalFormTemplate = null;
+
+      (function loadFormTemplate() {
+        fetch('form.html')
+          .then(res => {
+            if (!res.ok) throw new Error('Form fragment load failed');
+            return res.text();
+          })
+          .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            const formSection = doc.querySelector('section');
+            const style = doc.querySelector('style');
+
+            if (formSection) {
+              modalFormTemplate = formSection.cloneNode(true);
+            }
+            if (style) document.head.appendChild(style);
+          })
+          .catch(err => console.error(err));
+      })();
+
+      /* ---------- SCROLL REVEAL ---------- */
+      const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.18 });
+
+        revealEls.forEach(el => observer.observe(el));
+      } else {
+        revealEls.forEach(el => el.classList.add('is-visible'));
+      }
+
+      /* ---------- QUOTE MODAL LOGIC ---------- */
+      function openQuoteModal() {
+        const modal = document.getElementById('quote-modal');
+        const content = document.getElementById('quote-modal-content');
+        if (!modal || !content) return;
+
+        content.innerHTML = '';
+
+        if (modalFormTemplate) {
+          content.appendChild(modalFormTemplate.cloneNode(true));
+        } else {
+          const p = document.createElement('p');
+          p.style.padding = '20px';
+          p.style.background = '#f5f1e7';
+          p.textContent = 'Loading form...';
+          content.appendChild(p);
+        }
+
+        modal.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeQuoteModal() {
+        const modal = document.getElementById('quote-modal');
+        if (!modal) return;
+        modal.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+
+      document.addEventListener('click', function (e) {
+        const trigger = e.target.closest('[data-open-quote="true"]');
+        if (trigger) {
+          e.preventDefault();
+          openQuoteModal();
+        }
+
+        if (e.target.matches('.quote-modal-backdrop') || e.target.matches('.quote-modal-close')) {
+          closeQuoteModal();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
